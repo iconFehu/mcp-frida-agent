@@ -1,0 +1,44 @@
+/node_modules
+.vscode
+.idea
+build
+dist
+coverage
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 临时文件
+*.swp
+*.swo
+*~
+.tmp
+.temp
+
+# TypeScript相关
+*.tsbuildinfo
+.tscache
+
+# 测试和覆盖率报告
+junit.xml
+.nyc_output
+
+# 其他
+.cursor

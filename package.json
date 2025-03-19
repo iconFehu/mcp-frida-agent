@@ -1,0 +1,50 @@
+{
+  "name": "mcp-frida-agent",
+  "version": "1.0.0",
+  "description": "MCP-Frida的Agent层，提供高级内存分析能力",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && frida-compile src/index.ts -o dist/_agent.js -c",
+    "watch": "frida-compile src/index.ts -o dist/_agent.js -w",
+    "test": "node test/test-agent.js",
+    "test:memory": "node test/test-memory-rpc.js",
+    "test:process": "node test/test-process-rpc.js",
+    "test:socket": "node test/test-socket-rpc.js",
+    "test:stalker": "node test/test-stalker-rpc.js",
+    "test:kernel": "node test/test-kernel-rpc.js",
+    "test:interceptor": "node test/test-interceptor-rpc.js",
+    "test:nativepointer": "mocha test/test-nativepointer-rpc.js"
+  },
+  "keywords": [
+    "frida",
+    "memory",
+    "analysis",
+    "game",
+    "reverse-engineering",
+    "mcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "frida": "^16.7.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.2.0",
+    "@types/frida-gum": "^18.8.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.13.10",
+    "chai": "^5.2.0",
+    "frida-compile": "^16.4.1",
+    "mocha": "^11.1.0",
+    "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "frida"
+    ],
+    "onlyBuiltDependencies": [
+      "frida"
+    ]
+  }
+}
