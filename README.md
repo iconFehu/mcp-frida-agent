@@ -1,3 +1,5 @@
+[![Read in English](https://img.shields.io/badge/Language-Read%20in%20English-blue)](README.en.md)
+
 # MCP-Frida-Agent 高级内存指针操作框架
 
 这个项目提供了一套强大的Frida Native API的RPC封装系统，让开发者能够从Node.js端安全、高效地操作目标进程的内存指针和系统资源。该框架不仅支持基础的内存读写，还集成了进程操作、网络通信、代码执行跟踪和内核交互等高级功能。无论是游戏分析、安全研究还是性能调优，MCP-Frida-Agent都能成为您不可或缺的工具。

@@ -1,3 +1,5 @@
+[![阅读中文版](https://img.shields.io/badge/Language-%E9%98%85%E8%AF%BB%E4%B8%AD%E6%96%87%E7%89%88-blue)](README.md)
+
 # MCP-Frida-Agent Advanced Memory Pointer Operation Framework
 
 This project provides a powerful RPC encapsulation system for Frida's Native APIs, enabling developers to securely and efficiently manipulate memory pointers and system resources of target processes from the Node.js side. The framework not only supports basic memory read/write operations but also integrates advanced features like process manipulation, network communication, code execution tracing, and kernel interaction. Whether for game analysis, security research, or performance tuning, MCP-Frida-Agent can be an indispensable tool.
